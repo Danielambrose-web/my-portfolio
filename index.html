@@ -21,9 +21,43 @@
         </ul> 
         <div class="theme-tuggle">
             <input type="checkbox" name="" id="theme-switcher">
-            <label for="tuggle-switcher">tuggle theme</label>
+            <label for="toggle-switcher">toggle theme</label>
         </div> 
        </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+            <P>I am a passionate web developer, creating modern websites</P>
+            <a href="services.html" class="cta-button">view my work</a>
+        </section>
+
+        <section class="projects">
+           <h2>Featured Project</h2> 
+           <div class="project-grid">
+                <div class="project-card">
+                  <img src="images/image1.jpg" alt="my first work">
+                  <h3>project-1</h3>
+                  <p>a modern e-commerce platform with responsive design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/image2.jpg" alt="my second work">
+                    <h3>project-2</h3>
+                    <p>a diagnamic e-comerce platform</p>
+                </div>
+           </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025  MyPortfolio. all rights reserved</p>
+    </footer>
+    <script>
+        //theme toggle functionality
+        document.getElementById("theme-switch").addEventListener('change', () => {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
 </body>
 </html>
